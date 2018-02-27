@@ -23,7 +23,7 @@ public class ClienteSocket {
                                 String nacionalidadJugador, int valorMercado) {
     try{
       Socket socket = new Socket(this.host, this.puerto);
-      PrintWriter escribirInfo = neew PrintWriter(socket.getOutputStream(), true);
+      PrintWriter escribirInfo = new PrintWriter(socket.getOutputStream(), true);
       
       escribirInfo.println("Nombre Jugador: "+nombreJugador+".");
       escribirInfo.println("Equipo Jugador: "+equipoJugador+".");
@@ -45,7 +45,7 @@ public class ClienteSocket {
       Socket socket = new Socket(this.host, 4444);
       
       DataOutputStream out = new DataOutputStream(new BufferedOutputStream(socket.getOutputStream()));
-      DataInputStream in = new DataOutputStream(new BufferedInputStream(socket.getInputStream()));
+      DataInputStream in = new DataInputStream(new BufferedInputStream(socket.getInputStream()));
       
       byte[] bytes = new byte[1024];
       
