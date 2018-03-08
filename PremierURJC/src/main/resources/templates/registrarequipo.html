@@ -5,7 +5,7 @@
 	<HEAD> 
 		<TITLE>PREMIER URJC</TITLE> 
 		<meta charset="utf-8"/>
-		<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+		<link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
 		<meta name="author" content="PremierURJC">
 		<meta name="description" content="Inscripción de Equipos y Base de Datos Ligas y Equipos">
 		<meta name="keywords" content="futbol equipos equipo torneo torneos plantilla jugador jugadores entrenadores palmares">
@@ -28,11 +28,11 @@
 		  </style>		
 	</HEAD>
 	
-	<BODY BACKGROUND="images/fondo.jpg">
+	<BODY BACKGROUND="/images/fondo.jpg">
 		<table style="text-align: left; width: 85%; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
 		  <tbody>
 			<tr>
-			  <td style="vertical-align: middle; text-align: center; "><img style="width: 181px; height: 126px;" alt="logo" src="images/logo.png"></td>
+			  <td style="vertical-align: middle; text-align: center; "><img style="width: 181px; height: 126px;" alt="logo" src="/images/logo.png"></td>
 			  <td style="vertical-align: top; height: 100%;">
 			  <table style="text-align: left; width: 100%; height: 100%; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
 				<tbody>
@@ -42,7 +42,7 @@
 					</td>
 				  </tr>
 				  <tr>
-					<td style="vertical-align: top; text-align: center;"><strong>
+					<td style="vertical-align: top; text-align: center; color: #FFFFFF"><strong>
 					<script type="text/javascript" align="center">
 						var d = new Date();
 						var day = d.getDate();
@@ -72,7 +72,7 @@
 			  </table>
 			  <br>
 			  </td>
-			  <td style="vertical-align: middle; text-align: center;"><img style="width: 174px; height: 126px;" alt="baseDatos" src="images/bd.png" align="middle"></td>
+			  <td style="vertical-align: middle; text-align: center;"><img style="width: 174px; height: 126px;" alt="baseDatos" src="/images/bd.png" align="middle"></td>
 			</tr>
 		  </tbody>
 		</table>
@@ -81,25 +81,26 @@
 		<div align="center">		
 			<form action="/equipo/nuevo" method="post" accept-charset="utf-8">
 				<p>
-					<p align="center"><b>Nombre del Equipo: <input type='text' name='nombreEquipo' value ="{{equipoEntrenador}}" style="border: 1px solid #000099;"/></b></p>
+					<p align="center" style = "color: #FFFFFF;"><b>Nombre del Equipo: <input type='text' name='nombreEquipo' value ="{{equipoEntrenador}}" style="border: 1px solid #000099;"/></b></p>
 				</p>
 				<br>
 				<p>
-					<p align="center"><b>Liga del Equipo: <input type='text' name='liga' style="border: 1px solid #000099;"/></b></p>
+					<p align="center" style = "color: #FFFFFF;"><b>Liga del Equipo: <input type='text' name='liga' style="border: 1px solid #000099;"/></b></p>
 				</p>
 				<br>
 				<p>
-					<p align="center"><b>Nacionalidad del Equipo: <input type='text' name='nacionalidadEquipo' style="border: 1px solid #000099;"/></b></p>
+					<p align="center" style = "color: #FFFFFF;"><b>Nacionalidad del Equipo: <input type='text' name='nacionalidadEquipo' style="border: 1px solid #000099;"/></b></p>
 				</p>
 				<br>
 				<p>
-					<p align="center"><b>Número Torneos Ganados del Equipo: <input type='text' name='numTorneoGanados' style="border: 1px solid #000099;"/></b></p>
+					<p align="center" style = "color: #FFFFFF;"><b>Número Torneos Ganados del Equipo: <input type='text' name='numTorneoGanados' style="border: 1px solid #000099;"/></b></p>
 				</p>
 				<br>								
 				<TABLE align="center" style = "border: 0px solid #000099">
 					<TR style=" height: 10px">
 						<TH>
 							<input type="submit" value="Inscribir Equipo" style="background-color: #167EFA; height: 30px; width: 200px; border: 1px solid #000099; font-weight:bold;font-size: 20px; color: #FF8512;">
+							<input type="hidden" name="_csrf" value="{{token}}"/>
 						</TH>
 					</TR>
 				</TABLE>			
@@ -113,6 +114,7 @@
 			<TR>
 				<TH BGCOLOR=#000099>
 					<input type="submit" value="Volver" style="background-color: #167EFA; height: 75px; width: 300px; border: 1px solid #000099; font-weight:bold;font-size: 20px; color: #FF8512;">
+					<input type="hidden" name="_csrf" value="{{token}}"/>
 				</TH>
 			</TR>
 		</TABLE>
