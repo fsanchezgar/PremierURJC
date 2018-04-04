@@ -45,3 +45,5 @@ La página se divide en dos partes:
   ![p5](p5.png)
   Si, por el contrario, el loggin fallase se mostraría:
   ![p6](p6.png)
+## Diagrama de clases
+![diagramaclases](diagramaclases.png)
