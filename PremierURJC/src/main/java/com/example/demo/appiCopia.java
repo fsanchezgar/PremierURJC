@@ -35,7 +35,7 @@ public class appiCopia {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.print("LOOOOONGITUD: "+copiaJugador.size());
+		System.out.print("NUMERO DE JUGADORES EN LA BBDD: "+copiaJugador.size());
 		
 	}
 }
