@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @RestController
 public class appiCopia {
-
+	
+	ArrayList<Jugador> listaJugadores = new ArrayList<Jugador>()
+	
 	private static final ObjectMapper JSON_MAPPER = new ObjectMapper();
 	
 	@Autowired
