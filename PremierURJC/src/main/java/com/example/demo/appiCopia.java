@@ -18,12 +18,8 @@ public class appiCopia {
 	
 	private static final ObjectMapper JSON_MAPPER = new ObjectMapper();
 	
-	@Autowired
-	private RepositorioJugador repositorio_de_jugadores;
-  	
-	@RequestMapping(value = "/pedirDatos", method = RequestMethod.GET)
-	public  List<Jugador> salvarDatos() {
-		return repositorio_de_jugadores.findAll();
+	public static void salvarDatos() {
+		ArrayList<Jugador> copiaJugador = null;
 		
 	}
 }
